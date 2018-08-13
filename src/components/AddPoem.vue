@@ -6,7 +6,7 @@
         </FormItem>
         <FormItem label="诗词作者" prop="author">
             <Select v-model="formValidate.author" placeholder="Select author">
-                <Option v-for="item in authorList" :value="item.Id" :key="item.Id">{{item.author_name}}</Option>
+                <Option v-for="item in authorList" :value="item.value" :key="item.Id">{{item.label}}</Option>
             </Select>
         </FormItem>
         <FormItem>
